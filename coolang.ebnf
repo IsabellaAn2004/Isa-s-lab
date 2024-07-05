@@ -1,0 +1,18 @@
+assignment ::=  variable_name operator expression
+
+operator   ::= "+=" | "-=" | "*=" | "/=" | "="
+
+expression ::= variable_name | integer
+
+variable_name ::= letter+
+
+print_statement ::= "(return)" variable_name
+
+letter ::= uppercase_letter | lowercase_letter
+uppercase_letter ::= "A"..."Z"
+lowercase_letter ::= "a"..."z"
+
+integer      ::=  nonzerodigit digit*
+nonzerodigit ::=  "1"..."9"
+digit        ::=  "0"..."9"
+
